@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Uwezo Insurence</title>
   <link rel="stylesheet" href="mainstylesheet.css">
+  <link rel="stylesheet" href="style.scss">
   <style>
     /* CSS Styles */
 
@@ -39,7 +40,7 @@
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      filter: blur(1px);
+      /* filter: blur(5px); */
       /* Adjust blur intensity */
       z-index: 1;
     }
@@ -55,7 +56,8 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: calc(100vh - 80px);
+      height: 100vh;
+      /* height: calc(100vh - 80px); */
       /* Adjust height to fill below the navbar */
       text-align: center;
       color: white;
@@ -91,6 +93,8 @@
 
     .hero p {
       max-width: 500px;
+      padding-top: 16px;
+      padding-bottom: 16px;
     }
   </style>
 </head>
@@ -135,67 +139,144 @@
     </div>
 
     <!-- Cards-->
-    <div class="cards-wrapper" style="background: #000; width: 100%;">
-      <div class="container" style="position:absolute;top:-80px;left:0px;right:0px;bottom:0px; z-index:2; display:grid; background-color:
-         #008ad8;grid-template-columns:repeat(3,1fr); gap:16px;">
+    <div class="cards-wrapper" style=" width: 100%;">
+      <div class="container cards">
         <div class="card">
-          <span>
-            <ion-icon name="people-outline" class="card-icon"></ion-icon></span>
+          <ion-icon name="people-outline" class="card-icon"></ion-icon>
           <h4>Peace of Mind</h4>
-          <p>The quick fox jumps over the lazy dog</p>
+          <p>The quick fox jumps over the lazy dog
+          </p>
         </div>
         <div class="card">
-          <span>
-            <ion-icon name="people-outline" class="card-icon"></ion-icon>
-          </span>
+          <ion-icon name="people-outline" class="card-icon"></ion-icon>
           <h4>Set for Life</h4>
           <p>The quick fox jumps over the lazy dog</p>
         </div>
         <div class="card">
-          <span>
-            <ion-icon name="people-outline" class="card-icon"></ion-icon></span>
+          <ion-icon name="people-outline" class="card-icon"></ion-icon>
           <h4>100% Satisfaction</h4>
           <p>The quick fox jumps over the lazy dog</p>
         </div>
       </div>
     </div>
 
-    <!---->
-    <section class="testimonials">
-      <div class="testimonials-wrapper container">
+    <!--TESTIMONIAL-->
+    <section class="testimonials-wrapper">
+      <div class="testimonials container">
         <div class="testimonial">
-          <p>“The quick fox jumps over the lazy dog”</p>
-          <div class="author">
-            <image src="person.png" style="width:48px; height:48px; background-color:transparent;" />
-            <div class="author-info">
-              <h4>John Doe</h4>
-              <p>CEO, Company</p>
-            </div>
-          </div>
+          <image src="./images/person.png" style="height: 56px; width: 56px;" />
+          <h4>Peace of Mind</h4>
+          <p>So it really behave like neither.Now we have given up.</p>
         </div>
         <div class="testimonial">
-          <p>“The quick fox jumps over the lazy dog”</p>
-          <div class="author">
-            <image src="person.png" style="width:48px; height:48px; background-color:transparent;" />
-            <div class="author-info">
-              <h4>John Doe</h4>
-              <p>CEO, Company</p>
-            </div>
-          </div>
+          <image src="./images/person.png" style="height: 56px; width: 56px;" />
+          <h4>Set for Life</h4>
+          <p>They were used to create the machine that launched.</p>
         </div>
         <div class="testimonial">
-          <p>“The quick fox jumps over the lazy dog”</p>
-          <div class="author">
-            <image src="person.png" style="width:48px; height:48px; background-color:transparent;" />
-            <div class="author-info">
-              <h4>John Doe</h4>
-              <p>CEO, Company</p>
+          <image src="./images/person.png" style="height: 56px; width: 56px;" />
+          <h4>100% Satisfaction</h4>
+          <p>So it really behave like neither.Now we have given up</p>
+        </div>
+      </div>
+    </section>
+
+    <!--INDUSTRY-->
+    <section class="industry-wrapper">
+      <div class="container">
+        <div class="industry-text">
+          <h2>Industry</h2>
+          <p>Problems trying to resolve the conflict betwen the two major realms of Classical physics: Newtonian
+            physics.</p>
+        </div>
+        <div class="industries">
+          <div class="industry">
+            <!-- <div class="profile"> -->
+            <image src="./images//user1.png" style="width:150px;height: 150px;" />
+            <!-- </div> -->
+            <p>Slate helps you see how many more days you need to work to reach your financial goal for the month and
+              year.</p>
+            <div class="stars">
+              <image src="./images/icon-star.svg" class="icon-star" />
+              <image src="./images/icon-star.svg" class="icon-star" />
+              <image src="./images/icon-star.svg" class="icon-star" />
+              <image src="./images/icon-star.svg" class="icon-star" />
+              <image src="./images/icon-star.svg" class="icon-star" />
+            </div>
+          </div>
+          <div class="industry">
+            <!-- <div class="profile"> -->
+            <image src="./images//user2.png" style="width:150px;height: 150px;" />
+            <!-- </div> -->
+            <p>Slate helps you see how many more days you need to work to reach your financial goal for the month and
+              year.</p>
+            <div class="stars">
+              <image src="./images/icon-star.svg" class="icon-star" />
+              <image src="./images/icon-star.svg" class="icon-star" />
+              <image src="./images/icon-star.svg" class="icon-star" />
+              <image src="./images/icon-star.svg" class="icon-star" />
+              <image src="./images/icon-star.svg" class="icon-star" />
+            </div>
+          </div>
+          <div class="industry">
+            <!-- <div class="profile"> -->
+            <image src="./images//user3.png" style="width:150px;height: 150px;" />
+            <!-- </div> -->
+            <p>Slate helps you see how many more days you need to work to reach your financial goal for the month and
+              year.</p>
+            <div class="stars">
+              <image src="./images/icon-star.svg" class="icon-star" />
+              <image src="./images/icon-star.svg" class="icon-star" />
+              <image src="./images/icon-star.svg" class="icon-star" />
+              <image src="./images/icon-star.svg" class="icon-star" />
+              <image src="./images/icon-star.svg" class="icon-star" />
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!--CAMPANIES-->
+    <section class="company-wrapper">
+      <div class="companies container">
+        <image src="./images/Vector.png" class="company-img" />
+        <image src="./images/Vector-1.png" class="company-img" />
+
+        <image src="./images/Vector-2.png" class="company-img" />
+        <image src="./images/Vector-3.png" class="company-img" />
+        <image src="./images/Vector-4.png" class="company-img" />
+        <image src="./images/Vector-5.png" class="company-img" />
+      </div>
+    </section>
+
+    <!--SUBSCRIBE-->
+    <section class="subscribe-wrapper">
+      <div class="container subscribe" style=" padding: 32px;background: linear-gradient(to right, #044588, #d21589);">
+        <div class="subscribe-text">
+          <h4>Subscribe For Latest Newsletter</h4>
+        </div>
+        <div class="" style="width:100%">
+          <form class="subscribe-form" action="">
+            <input type="text" placeholder="Your Email">
+            <button class="subscribe-btn btn-blue" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--PRICING-->
+    <section class="pricing-wrapper">
+      <div class="pricing container">
+        <div class="pricing-text"></div>
+        <div class="pricing-cards">
+          <div class="pricing-card"></div>
+          <div class="pricing-card"></div>
+          <div class="pricing-card"></div>
+        </div>
+      </div>
+    </section>
+
+    <image src="./images//Desktop.png" style="height: auto; width:1000px; margin-top:56px;" />
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-wrapper">

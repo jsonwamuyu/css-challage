@@ -1,0 +1,33 @@
+// install live saas compiler
+// live server
+.saas {
+    height: 100vh;
+
+    // flex display
+    display: flex;
+
+    //To bring items at the center horizontally -> along X-axix
+    justify-content: center;
+
+    //To bring items at the center vertically -> along Y-axix
+    align-items: center;
+
+    // Grid display: ;
+    display: grid;
+
+    //To bring items at the center horizontally -> along X-axis
+    //To bring items at the center horizontally -> along X-axis
+
+    //To bring items at the center both horizontally and vertically-> along X and Y axis
+    place-content: center;
+
+
+    //Centering using position
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translateX(-50%);
+
+
+
+}

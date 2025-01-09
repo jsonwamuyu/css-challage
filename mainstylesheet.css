@@ -14,6 +14,7 @@ p {
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.6;
+    color: #777777;
 }
 
 body {
@@ -21,8 +22,8 @@ body {
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.6;
-    color: #414141;
-    background-color: #faf8f9;
+    color: #252b42;
+    background-color: #fafafa;
 }
 
 .small {
@@ -89,14 +90,15 @@ h6 {
     flex-direction: row;
     gap: 4px;
     background-color: #23a6f0;
-    border:2px solid #23a6f0;
+    border: 2px solid #23a6f0;
     color: white;
     border-radius: 8px;
     padding: 8px 16px;
     transition: background-color 0.3s, color 0.3s;
 
 }
-.member:hover{
+
+.member:hover {
     color: #23a6f0;
     background-color: #fff;
     border: 2px solid #ffffff;
@@ -105,11 +107,11 @@ h6 {
 /*BUTTONS*/
 .btn {
     display: inline-block;
-    padding: 0.5rem 1.5rem;
+    padding: 8px 32px;
     margin: 0.5rem 0;
     border: 2px solid #23a6f0;
     border-radius: 32px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     line-height: 1.6;
     cursor: pointer;
@@ -157,9 +159,13 @@ h6 {
 .logo-nav {
     display: flex;
     align-items: center;
-    gap:32px;
+    gap: 32px;
 }
-.nav-buttons { display: flex; align-items: center;}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+}
 
 
 .navbar a {
@@ -205,7 +211,20 @@ h6 {
     gap: 4px;
     align-items: start;
     padding: 32px 32px;
-    box-shadow: 2px 4px 6px gray;
+    box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.2);
+    color: #414141;
+}
+
+.cards {
+    position: absolute;
+    top: -60px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
 }
 
 .card:hover {
@@ -214,13 +233,17 @@ h6 {
 }
 
 .card p {
-    color: #636262
+    max-width: 230px;
+}
+
+.card h4 {
+    font-weight: 700;
 }
 
 .card-icon {
     color: #23a6f0;
-    height: 40px;
-    width: 40px;
+    height: 48px;
+    width: 48px;
 }
 
 
@@ -231,24 +254,171 @@ h6 {
     padding-top: 20px;
     padding-bottom: 20px;
     /* position: relative; */
+    margin-top: 200px;
+
+}
+
+.testimonials {
     display: flex;
     flex-direction: row;
     justify-items: center;
     align-items: center;
-    margin-top: 160px;
-
+    padding: 5rem;
 }
 
 .testimonial {
-    background-color: white;
     display: flex;
+    gap: 8px;
     flex-direction: column;
-    gap: 4px;
-    align-items: start;
+    align-items: center;
     padding: 8px 32px;
-    box-shadow: 2px 4px 6px gray;
+    text-align: center;
+    justify-content: center;
 }
 
+.testimonial h4 {
+    font-weight: 700;
+}
+
+
+/*INDUSTRY*/
+.industries {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 32px;
+}
+
+.industry {
+    background-color: #ffffff;
+    border: 1px solid #e9e8e8;
+    border-radius: 8px;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    margin-bottom: 48px;
+
+}
+
+.industry-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 48px;
+}
+
+.industry-text p {
+    max-width: 500px;
+    text-align: center;
+}
+
+.industry p {
+    max-width: 250px;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.icon-star {
+    height: 16px;
+    width: 16px;
+}
+
+
+/*COMPANIES*/
+.company-wrapper {
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-top: 2rem;
+}
+
+.companies {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.company-img {
+    height: 70px;
+    width: auto;
+}
+
+/* SUBSCRIBE*/
+.suscribe-wrapper {
+    width: 100%;
+}
+
+.subscribe {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscribe-btn {
+    padding: 16px 32px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+}
+
+.subscribe-form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background: white;
+    padding-left: 8px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.subscribe-form input {
+    border: none;
+    width: 100%;
+    outline: none;
+    height: 100%;
+    height: 100%;
+    padding: 16px 32px;
+}
+
+.subscribe-text {
+    width: 100%;
+}
+
+.subscribe-text h4 {
+    font-weight: 600px;
+    max-width: 300px;
+    color: white;
+}
+
+
+/*PRICING*/
+
+.pricing.wrapper {
+    width: 100%
+}
+
+.pricing {
+    margin-top: 80px;
+}
+
+.pricing-text {
+    display: flex;
+}
+
+.pricing-card {
+    display: flex;
+}
 
 /* FOOTER */
 .footer-wrapper {
