@@ -6,97 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Uwezo Insurence</title>
   <link rel="stylesheet" href="mainstylesheet.css">
-  <link rel="stylesheet" href="style.scss">
-  <style>
-    /* CSS Styles */
-
-
-
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #faf8f9;
-      line-height: 1.6;
-      font-size: 1rem;
-    }
-
-    /* Wrapper for Navbar and Hero Section */
-    .blurred-background {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      overflow: hidden;
-    }
-
-    /* Background Image with Blur Effect */
-    .blurred-background::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url('./images/hero.png');
-      /* Replace with your image URL */
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      /* filter: blur(5px); */
-      /* Adjust blur intensity */
-      z-index: 1;
-    }
-
-
-
-    /* Hero Section */
-    .hero {
-      position: relative;
-      z-index: 2;
-      /* Ensure it's above the background */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      /* height: calc(100vh - 80px); */
-      /* Adjust height to fill below the navbar */
-      text-align: center;
-      color: white;
-    }
-
-    .hero .cta-button {
-      padding: 8px 32px;
-      background-color: #008ad8;
-      border: 1px solid #008ad8;
-      color: white;
-      font-size: 1rem;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background-color 0.3s, color 0.3s;
-      border-radius: 100px;
-    }
-
-    .hero .cta-button:hover {
-      background-color: white;
-      color: #008ad8;
-    }
-
-
-
-    .cta-buttons-wrapper {
-      display: flex;
-      flex-direction: row;
-      gap: 32px;
-      width: 100%;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .hero p {
-      max-width: 500px;
-      padding-top: 16px;
-      padding-bottom: 16px;
-    }
-  </style>
 </head>
 
 <body>
@@ -267,32 +176,280 @@
     <!--PRICING-->
     <section class="pricing-wrapper">
       <div class="pricing container">
-        <div class="pricing-text"></div>
+        <div class="pricing-text">
+          <h2>Pricing</h2>
+          <p>Problems trying to solve the conflict between the two major realms of Classical physics: Newtonian
+            mechanics.</p>
+        </div>
         <div class="pricing-cards">
-          <div class="pricing-card"></div>
-          <div class="pricing-card"></div>
-          <div class="pricing-card"></div>
+
+          <div class="pricing-card">
+            <h4>FREE</h4>
+            <P style="font-weight: 500; max-width: 150px; text-align: center;">Organize across all apps by hand</P>
+            <div class="pricing-card__price">
+              <h2 style="color:#23a6f0">0</h2>
+              <div class="pricing-card__price-dollar" style="display: flex; flex-direction: column; gap:2px;">
+                <p style="font-weight: 600; color:#23a6f0;">$</p>
+                <p style="color:#23a6f0;">Per Month</p>
+              </div>
+            </div>
+            <div class="pricing-card__benefits">
+              <div class="pricing-card__benefits-item">
+                <div class="pricing-card__benefits-item-icon">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+                <div>
+                  <p>Unlimited product updates.</p>
+                </div>
+              </div>
+
+              <div class="pricing-card__benefits-item">
+                <div class="pricing-card__benefits-item-icon">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+                <div>
+                  <p>Unlimited product updates.</p>
+                </div>
+              </div>
+
+              <div class="pricing-card__benefits-item">
+                <div class="pricing-card__benefits-item-icon">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+                <div>
+                  <p>Unlimited product updates.</p>
+                </div>
+              </div>
+
+              <div class="pricing-card__benefits-item">
+                <div class="pricing-card__benefits-item-icon-gray">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+                <div>
+                  <p>1GB cloud storage.</p>
+                </div>
+              </div>
+
+              <div class="pricing-card__benefits-item">
+                <div class="pricing-card__benefits-item-icon-gray">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+                <div>
+                  <p>Email and community support.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <button class="try-btn">Try for free</button>
+
+          </div>
+
+          <div class="pricing-card">
+            <h4>FREE</h4>
+            <P style="font-weight: 500; max-width: 150px; text-align: center;">Organize across all apps by hand</P>
+            <div class="pricing-card__price">
+              <h2 style="color:#23a6f0">9.99</h2>
+              <div class="pricing-card__price-dollar">
+                <p style="font-weight: 600; color:#23a6f0;">$</p>
+                <p style="color:#23a6f0;">Per Month</p>
+              </div>
+            </div>
+            <div class="pricing-card__benefits">
+              <div class="pricing-card__benefits-item">
+                <div class="pricing-card__benefits-item-icon">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+                <div>
+                  <p>Unlimited product updates.</p>
+                </div>
+              </div>
+
+              <div class="pricing-card__benefits-item">
+                <div class="pricing-card__benefits-item-icon">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+                <div>
+                  <p>Unlimited product updates.</p>
+                </div>
+              </div>
+
+              <div class="pricing-card__benefits-item">
+                <div class="pricing-card__benefits-item-icon">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+                <div>
+                  <p>Unlimited product updates.</p>
+                </div>
+              </div>
+
+              <div class="pricing-card__benefits-item">
+                <div class="pricing-card__benefits-item-icon-gray">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+                <div>
+                  <p>1GB cloud storage.</p>
+                </div>
+              </div>
+
+              <div class="pricing-card__benefits-item">
+                <div class="pricing-card__benefits-item-icon-gray">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+                <div>
+                  <p>Email and community support.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <button class="try-btn">Try for free</button>
+
+          </div>
+
+          <div class="pricing-card">
+            <h4>FREE</h4>
+            <P style="font-weight: 500; max-width: 150px; text-align: center;">Organize across all apps by hand</P>
+            <div class="pricing-card__price"
+              style="display: flex; flex-direction: row; gap:8px; color:#23a6f0; font-weight: 600;">
+              <h2 style="color:#23a6f0">0</h2>
+              <div class="pricing-card__price-dollar" style="display: flex; flex-direction: column; gap:2px;">
+                <p style="font-weight: 600; color:#23a6f0;">$</p>
+                <p style="color:#23a6f0;">Per Month</p>
+              </div>
+            </div>
+            <div class="pricing-card__benefits">
+              <div class="pricing-card__benefits-item">
+                <div class="pricing-card__benefits-item-icon">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+                <div>
+                  <p>Unlimited product updates.</p>
+                </div>
+              </div>
+
+              <div class="pricing-card__benefits-item">
+                <div class="pricing-card__benefits-item-icon">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+                <div>
+                  <p>Unlimited product updates.</p>
+                </div>
+              </div>
+
+              <div class="pricing-card__benefits-item">
+                <div class="pricing-card__benefits-item-icon">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+                <div>
+                  <p>1GB cloud storage</p>
+                </div>
+              </div>
+
+              <div class="pricing-card__benefits-item">
+                <div class="pricing-card__benefits-item-icon-gray">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+                <div>
+                  <p>Email and community support.</p>
+                </div>
+              </div>
+
+              <div class="pricing-card__benefits-item">
+                <div class="pricing-card__benefits-item-icon-gray">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+                <div>
+                  <p>Unlimited product updates.</p>
+                </div>
+              </div>
+
+            </div>
+            <button class="try-btn">Try for free</button>
+
+          </div>
+
         </div>
       </div>
     </section>
 
-    <image src="./images//Desktop.png" style="height: auto; width:1000px; margin-top:56px;" />
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-wrapper">
-        <div class="footer-logo">UwezoInsurence</div>
-        <div class="footer-links">
-          <a href="#">Home</a>
-          <a href="#">Product</a>
-          <a href="#">Pricing</a>
-          <a href="#">Contact</a>
-        </div>
-        <div class="footer-socials">
-          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-        </div>
+    <!--CONTACT US-->
+    <div class="container contact">
+      <div class="contact-text">
+        <h5>Consulting Agency For Your Business</h5>
+        <p>The quick fox jumps over the lazy dog.</p>
       </div>
+      <div class="contact-btn">
+        <button class="try-btn">Contact Us</button>
+      </div>
+    </div>
+
+    <footer class="wrapper" style="background-color: white;">
+      <div class="container footer">
+        <div class="footer-company">
+          <p class="footer-title">Company Info</p>
+          <div class="footer-company__links">
+            <p><a href="">About Us</a></p>
+            <p> <a href="">Carrier</a> </p>
+            <p><a href="">We are hiring</a></p>
+            <p><a href="">Blog</a></p>
+          </div>
+        </div>
+
+        <div class="footer-legal">
+          <p class="footer-title">Legal</p>
+          <div class="footer-company__links">
+            <p><a href="">About Us</a></p>
+            <p><a href="">Carrier</a></p>
+            <p><a href="">We are hiring</a></p>
+            <p> <a href="">Blog</a></p>
+          </div>
+        </div>
+
+        <div class="footer-features">
+          <p class="footer-title">Features</p>
+          <div class="footer-company__links">
+            <p><a href="">Business Marketing</a></p>
+            <p><a href="">User Analtics</a></p>
+            <p><a href="">Live Chat</a></p>
+            <p><a href="">Unlimited upport</a></p>
+          </div>
+        </div>
+
+        <div class="footer-resources">
+          <p class="footer-title">Resources</p>
+          <div class="footer-company__links">
+            <p><a href="">IOS & Android</a></p>
+            <p><a href="">Watch a Demo</a></p>
+            <p><a href="">Customers</a></p>
+            <p><a href="">API</a></p>
+          </div>
+        </div>
+
+        <div class="footer-getintouch">
+          <p class="footer-title">Get In Touch</p>
+          <div class="footer-company__links">
+            <p><a href="">(408) 555-1024</a></p>
+            <p><a href="">4567 Washington Aven.</a></p>
+            <p><a href="">debra.hot@example.com</a></p>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <div class="footer-banner container">
+      <div class="footer-banner__copyrights">
+        <p>Made With Love By Figmaland All Rights Reserved</p>
+      </div>
+      <div class="footer-banner__socials">
+        <a href="">Facbook</a>
+        <a href="">Instagram</a>
+        <a href="">Twitter</a>
+      </div>
+    </div>
+
+    <!-- <image src="./images//Desktop.png" style="height: auto; width:1000px; margin-top:56px;" /> -->
   </section>
 
 
